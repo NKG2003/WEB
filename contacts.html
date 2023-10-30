@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <title>Nurzholy</title>
+</head>
+
+<body class="font-roboto bg-[url('/img/Astana.jpg')]  md:h-screen md:w-screen bg-cover bg-no-repeat bg-center bg-local">
+
+    <nav class=" bg-blue-950  fixed z-30 py-1 w-full h-14 flex flex-wrap items-center justify-between mx-auto p-0">
+        <a href="/index.html" class="flex  justify-start w-auto h-12 p-2 -ml-6 lg:-ml-3">
+            <img src="./img/logo(2).png" class="h-10 ml-9 " alt="Flowbite Logo" />
+        </a>
+        <button data-collapse-toggle="navbar-dropdown" type="button"
+            class="inline-flex  bg-blue-950 items-center p-2 w-10 h-10 justify-center text-xs md:text-xs  text-white rounded-lg md:hidden  "
+            aria-controls="navbar-dropdown" aria-expanded="false">
+            <span class="sr-only "></span>
+            <svg class="w-5 h-5   " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+        </button>
+        <div class="hidden w-full  md:block md:w-auto text-white " id="navbar-dropdown">
+            <ul
+                class="flex uppercase flex-col xl:text-base md:text-xs font-bold p-0 mt-5 border  bg-blue-950 text-white rounded-lg md:flex-row md:space-x-0.5 lg:md:space-x-1 md:mt-0 md:border-0 ">
+                <li>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                        class="flex items-center uppercase justify-between w-full py-3 pl-1 p-5  pr-4rounded md:hover:bg-transparent md:border-0  md:w-auto hover:text-orange-500">Компания
+                        <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg></button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownNavbar"
+                        class="z-10 hidden font-normal bg-orange-500 divide-yrounded-lg shadow w-auto">
+                        <ul class="py-6  " aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="/history.html" class="block px-6 py-2">История</a>
+                            </li>
+                            <li>
+                                <a href="/org-strucutre.html" class="block px-6 py-2 ">Организационная
+                                    структура</a>
+                            </li>
+                            <li>
+                                <a href="/leadership.html" class="block px-6 py-2 ">Руководство</a>
+                            </li>
+                            <!-- <li>
+                            <a href="#" class="block px-6 py-2 ">Виды деятельности</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-6 py-2 ">Планы и отчеты</a>
+                        </li> -->
+                            <li>
+                                <a href="/regulations.html" class="block px-6 py-2 ">Нормативные документы</a>
+                            </li>
+                            <!-- <li>
+                            <a href="#" class="block px-6 py-2 ">Вопросы</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-6 py-2 ">Гаджеты</a>
+                        </li> -->
+                    </div>
+                </li>
+                <!-- блоки -->
+
+                <!-- <li class="block py-3 pl-1 lg:pl-6 pr-1 lg:pr-4  text-white  hover:text-orange-500"><a href="#"
+                    class="nav_link mr-1">Вакансия</a></li> -->
+                <li class="block py-3  text-white  hover:text-orange-500"><a href="https://goszakup.gov.kz/"
+                        class="nav_link mr-1 p-5">Закупки</a></li>
+                <!-- <li class="block py-3 pl-1 lg:pl-6 pr-1 lg:pr-4 text-white  hover:text-orange-500"><a
+                    href="/news.html" class="nav_link mr-1">Новости</a></li> -->
+                <li class="block py-3   text-white  hover:text-orange-500"><a href="/contacts.html"
+                        class="nav_link mr-1 p-5">Контакты</a></li>
+
+                <!-- Language -->
+
+
+
+                <button id="dropdownDefaultButtoLanguage" data-dropdown-toggle="dropdow"
+                    class="flex items-center  justify-between  lg:pl-6 w-full py-3 pb-4 pl-1 pr-4 p-5 pr-4rounded md:hover:bg-transparent md:border-0  md:w-auto hover:text-orange-500 uppercase  "
+                    type="button">ru<svg class="w-2.5 h-2.5 ml-2.5 " aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" />
+                    </svg></button>
+
+                <div id="dropdow"
+                    class="z-10 hidden divide-y  shadow w-14 text-center  md:bg-orange-500/95 bg-orange-500 font-medium">
+                    <ul class="py-0.5 uppercase   text-white" aria-labelledby="dropdownDefaultButtoLanguage">
+                        <li>
+                            <a href="#" class="block px-4 py-2 mt-3 ">kz</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 mt-3 ">en</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Поиск -->
+
+                <li>
+                    <a>
+                        <div class="flex justify-start lg:px-3 px-2 py-2 pl-5">
+                            <input type="text"
+                                class="bg-orange-500 text-gray-600 border-0 sm:w-full lg:w-auto md:w-20 h-7 font-normal px-2 py-2.5 rounded-l-lg"
+                                name="SearchForm[keyword]" placeholder="Поиск" aria-required="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="bi bi-search w-5 h-7 rounded-r-lg px-1 bg-gray-200 fill-black"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                            <button type="submit" class=""></button>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <div class=" body-font justify-center flex  xl:text-2xl  text-white px-1 lg:px-16 ">
+        <div class=" py-1 mx-auto flex xl:justify-center md:flex-nowrap flex-wrap z-10 pl-2 mt-20">
+            <div class="text-white flex-col  2xl:mr-10 mb-6 pr-10 z-10">
+                <h1 class="lg:mb-6 mb-4 font-bold">КОНТАКТЫ</h1>
+                <p class="font-bold mb-6">Приемная</p>
+
+                <div class="mb-6 lg:mb-12 lg:text-xl flex flex-col  lg:flex-row">
+                    <p class="lg:text-xl mr-2">Телефон:</p>
+                    <p> <a href="#" class="hover:underline">+7 (7172) 73-55-37 (вн. 1101)</a>
+                    </p>
+                </div>
+
+                <div class="mb-6 lg:mb-12 lg:text-xl flex flex-col  lg:flex-row">
+                    <p class="mr-2"> Эл. почта:</p>
+                    <p><a href="#" class="hover:underline">INFO@NZHKEDEN.KZ</a>
+                    </p>
+                </div>
+
+                <a href="#" class="font-bold mb-4 lg:mb-12">е-Минфин</a>
+
+                <div class="mb-6 lg:mb-12 lg:text-xl flex flex-col  lg:flex-row  mt-6">
+                    <p class="lg:text-xl mr-2">Телефон поддержки пользователей:</p>
+                    <p><a href="#" class="hover:underline"> +7(7172) 73-54-00</a></p>
+                </div>
+
+                <div class="mb-6 lg:mb-12 lg:text-xl flex flex-col  lg:flex-row">
+                    <p class=" lg:text-xl mr-2"> Эл. почта: </p>
+                    <p><a href="#" class="hover:underline">minfin_support@ecc.kz</a>
+                    </p>
+                </div>
+
+
+                <p class="font-bold  mb-4 lg:mb-12">Местонахождение</p>
+                <div class="flex flex-col ">
+                    <a href="#" class="lg:text-xl">ТОО «Nur Zholy Customs Service» Жетысу область,</a>
+                    <a href="#" class="lg:text-xl"> Панфиловский район, Пенжимский сельский округ,</a>
+                    <a href="#" class="lg:text-xl"> село Пенжим, Учетный квартал 87, здание 27</a>
+                </div>
+            </div>
+
+
+            <div class="text-white 2xl:mr-10 mb-6 pr-4 z-10  ">
+                <h1 class="text-white font-bold lg:mt-0">ОБРАТНАЯ СВЯЗЬ</h1>
+                <div class="lg:w-1/3 md:w-1/2 text-white flex flex-col md:ml-auto w-60  py-4">
+                    <p class="leading-relaxed mb-5 text-base text-white text-justify">Если у вас есть
+                        предложения или
+                        вопросы,
+                        пожалуйста,заполните следующую форму, чтобы связаться с нами.</p>
+                    <div class="relative mb-4">
+
+                        <input type="text" id="name" placeholder="Имя" name="name"
+                            class="w-60 lg:w-80 text-sm rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200  outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <div class="relative mb-4">
+
+                        <input type="email" id="email" placeholder="Почта" name="email"
+                            class="w-60 lg:w-80 text-sm rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200  outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+
+                    <div class="relative mb-4">
+
+                        <input id="dropdownDefaultButtonSubject" data-dropdown-toggle="dropdo" type="text" id="category"
+                            placeholder="Выберети категорию" name="category"
+                            class="w-60 lg:w-80 text-sm rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200  outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        <div id="dropdo"
+                            class="z-10 hidden divide-y  shadow w-60 lg:w-80 text-center  bg-white  font-medium">
+                            <ul class=" lg:text-sm text-xs text-gray-300"
+                                aria-labelledby="dropdownDefaultButtonSubject">
+                                <li>
+                                    <p class="block px-4 py-2 mt-3 "></p>
+                                </li>
+                                <li>
+                                    <p class="block px-4 py-2 mt-3 "></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="relative mb-4">
+
+                        <input type="text" id="theme" placeholder="Тема" name="theme"
+                            class="w-60 lg:w-80 text-sm rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200  outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <div class="relative mb-4">
+                        <div class="relative mb-4">
+
+                            <input type="text" id="message" placeholder="Сообщение" name="message"
+                                class="w-60 lg:w-80 text-sm rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200  outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+
+                        <textarea id="search" name="search" placeholder="Поиск"
+                            class="w-60 lg:w-80 text-sm rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-10 lg:h-20  outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                    </div>
+                    <button
+                        class="text-sm bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded ">Отправить</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+</body>
+
+</html>

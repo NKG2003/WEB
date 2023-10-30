@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <title>Nurzholy</title>
+</head>
+
+<body class="font-roboto">
+
+    <div class=" h-screen relative">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/img/bg-history.png');"></div>
+        <div class="h-full flex justify-center">
+
+            <nav
+                class=" bg-blue-950  fixed z-30 py-1 w-full h-14 flex flex-wrap items-center justify-between mx-auto p-0">
+                <a href="/index.html" class="flex  justify-start w-auto h-12 p-2 -ml-6 lg:-ml-3">
+                    <img src="./img/logo(2).png" class="h-10 ml-9 " alt="Flowbite Logo" />
+                </a>
+                <button data-collapse-toggle="navbar-dropdown" type="button"
+                    class="inline-flex  bg-blue-950 items-center p-2 w-10 h-10 justify-center text-xs md:text-xs  text-white rounded-lg md:hidden  "
+                    aria-controls="navbar-dropdown" aria-expanded="false">
+                    <span class="sr-only "></span>
+                    <svg class="w-5 h-5   " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full  md:block md:w-auto text-white " id="navbar-dropdown">
+                    <ul
+                        class="flex uppercase flex-col xl:text-base md:text-xs font-bold p-0 mt-5 border  bg-blue-950 text-white rounded-lg md:flex-row md:space-x-0.5 lg:md:space-x-1 md:mt-0 md:border-0 ">
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                class="flex items-center uppercase justify-between w-full py-3 pl-1 p-5  pr-4rounded md:hover:bg-transparent md:border-0  md:w-auto hover:text-orange-500">Компания
+                                <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar"
+                                class="z-10 hidden font-normal bg-orange-500 divide-yrounded-lg shadow w-auto">
+                                <ul class="py-6  " aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="/history.html" class="block px-6 py-2">История</a>
+                                    </li>
+                                    <li>
+                                        <a href="/org-strucutre.html" class="block px-6 py-2 ">Организационная
+                                            структура</a>
+                                    </li>
+                                    <li>
+                                        <a href="/leadership.html" class="block px-6 py-2 ">Руководство</a>
+                                    </li>
+                                    <!-- <li>
+                                    <a href="#" class="block px-6 py-2 ">Виды деятельности</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-6 py-2 ">Планы и отчеты</a>
+                                </li> -->
+                                    <li>
+                                        <a href="/regulations.html" class="block px-6 py-2 ">Нормативные документы</a>
+                                    </li>
+                                    <!-- <li>
+                                    <a href="#" class="block px-6 py-2 ">Вопросы</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-6 py-2 ">Гаджеты</a>
+                                </li> -->
+                            </div>
+                        </li>
+                        <!-- блоки -->
+
+                        <!-- <li class="block py-3 pl-1 lg:pl-6 pr-1 lg:pr-4  text-white  hover:text-orange-500"><a href="#"
+                            class="nav_link mr-1">Вакансия</a></li> -->
+                        <li class="block py-3  text-white  hover:text-orange-500"><a href="https://goszakup.gov.kz/"
+                                class="nav_link mr-1 p-5">Закупки</a></li>
+                        <!-- <li class="block py-3 pl-1 lg:pl-6 pr-1 lg:pr-4 text-white  hover:text-orange-500"><a
+                            href="/news.html" class="nav_link mr-1">Новости</a></li> -->
+                        <li class="block py-3   text-white  hover:text-orange-500"><a href="/contacts.html"
+                                class="nav_link mr-1 p-5">Контакты</a></li>
+
+                        <!-- Language -->
+
+
+
+                        <button id="dropdownDefaultButtoLanguage" data-dropdown-toggle="dropdow"
+                            class="flex items-center  justify-between  lg:pl-6 w-full py-3 pb-4 pl-1 pr-4 p-5 pr-4rounded md:hover:bg-transparent md:border-0  md:w-auto hover:text-orange-500 uppercase  "
+                            type="button">ru<svg class="w-2.5 h-2.5 ml-2.5 " aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+
+                        <div id="dropdow"
+                            class="z-10 hidden divide-y  shadow w-14 text-center  md:bg-orange-500/95 bg-orange-500 font-medium">
+                            <ul class="py-0.5 uppercase   text-white" aria-labelledby="dropdownDefaultButtoLanguage">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 mt-3 ">kz</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 mt-3 ">en</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Поиск -->
+
+                        <li>
+                            <a>
+                                <div class="flex justify-start lg:px-3 px-2 py-2 pl-5">
+                                    <input type="text"
+                                        class="bg-orange-500 text-gray-600 border-0 sm:w-full lg:w-auto md:w-20 h-7 font-normal px-2 py-2.5 rounded-l-lg"
+                                        name="SearchForm[keyword]" placeholder="Поиск" aria-required="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-search w-5 h-7 rounded-r-lg px-1 bg-gray-200 fill-black"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg>
+                                    <button type="submit" class=""></button>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+
+
+
+            <div class="z-10 flex body-font text-white py-28  items-center flex-col px-5 -mt-8 lg:-mt-0 ">
+                <h1 class="flex justify-center mb-8 font-semibold xl:text-3xl z-10">ИСТОРИЯ НАШЕЙ КОМПАНИИ</h1>
+
+                <div
+                    class="hidden lg:flex justify-center items-center flex-col font-medium xl:text-2xl z-10 text-justify md:px-60">
+                    ТОО «Nur Zholy Customs Service» (далее – Товарищество) создано 7 октября 2022 года в порядке,
+                    установленном законодательством Республики Казахстан. В соответствии с постановлением
+                    Правительства Республики Казахстан от 30 декабря 2022 года № 1132 «О некоторых вопросах
+                    Товарищества»
+                    и приказом председателя Комитета государственного имущества и приватизации Министерства финансов
+                    Республики Казахстан от 12 января 2023 года № 17 сто процентов доли участия в уставном капитале
+                    Товарищества,
+                    принадлежащего ТОО «Eurotranzit Nur Zholy», было передано в республиканскуюсобственность по договору
+                    дарения,
+                    права по владению и пользованию государственной долей в Товариществе передано
+                    Комитету государственных доходов Министерства финансов Республики Казахстан».
+
+                </div>
+
+
+                <div
+                    class="inline-block lg:hidden  justify-start  font-medium text-xs sm:text-lg z-10 pl-5 pr-4 text-justify">
+                    ТОО «Nur Zholy Customs Service» (далее – Товарищество)
+                    создано
+                    7 октября 2022 года в порядке, установленном
+                    законодательством Республики Казахстан.
+                    В соответствии с постановлением Правительства Республики
+                    Казахстан от 30
+                    декабря 2022 года № 1132
+                    «О некоторых вопросах Товарищества» и приказом председателя Комитета
+                    государственного имущества и приватизации Министерства
+                    финансов Республики Казахстан от 12 января 2023
+                    года № 17 сто процентов доли участия в уставном капитале Товарищества,
+                    принадлежащего ТОО «Eurotranzit Nur
+                    Zholy»,
+                    было передано в республиканскую собственность по договору дарения, права по владению
+                    и
+                    пользованию
+                    государственной долей в Товариществе передано Комитету государственных доходов
+                    Министерства финансов
+                    Республики Казахстан».
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+</body>
+
+</html>

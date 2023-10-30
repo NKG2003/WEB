@@ -1,0 +1,9 @@
+.dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu .dropdown-menu {
+    top: 20%;
+    bottom: 100%;
+    margin-bottom:32%;
+  }
