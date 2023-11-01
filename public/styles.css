@@ -600,8 +600,12 @@ video {
   inset: 0px;
 }
 
-.left-0 {
-  left: 0px;
+.left-52 {
+  left: 13rem;
+}
+
+.right-40 {
+  right: 10rem;
 }
 
 .top-0 {
@@ -612,64 +616,8 @@ video {
   top: 3rem;
 }
 
-.left-10 {
-  left: 2.5rem;
-}
-
-.left-20 {
-  left: 5rem;
-}
-
-.left-28 {
-  left: 7rem;
-}
-
-.left-40 {
-  left: 10rem;
-}
-
-.left-52 {
-  left: 13rem;
-}
-
-.left-56 {
-  left: 14rem;
-}
-
-.-top-5 {
-  top: -1.25rem;
-}
-
-.right-1 {
-  right: 0.25rem;
-}
-
-.right-0 {
-  right: 0px;
-}
-
-.right-40 {
-  right: 10rem;
-}
-
-.right-52 {
-  right: 13rem;
-}
-
-.right-96 {
-  right: 24rem;
-}
-
-.right-7 {
-  right: 1.75rem;
-}
-
-.right-72 {
-  right: 18rem;
-}
-
-.right-64 {
-  right: 16rem;
+.top-2 {
+  top: 0.5rem;
 }
 
 .z-0 {
@@ -793,12 +741,16 @@ video {
   margin-top: 1.5rem;
 }
 
-.-mt-5 {
-  margin-top: -1.25rem;
+.-ml-2 {
+  margin-left: -0.5rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
+.-ml-4 {
+  margin-left: -1rem;
+}
+
+.-ml-3 {
+  margin-left: -0.75rem;
 }
 
 .block {
@@ -831,6 +783,10 @@ video {
 
 .h-14 {
   height: 3.5rem;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .h-2 {
@@ -881,8 +837,8 @@ video {
   height: 100vh;
 }
 
-.h-16 {
-  height: 4rem;
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-10 {
@@ -935,6 +891,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .flex-shrink-0 {
@@ -1156,6 +1116,10 @@ video {
   padding: 0px;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -1174,10 +1138,6 @@ video {
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .px-1 {
@@ -1275,24 +1235,14 @@ video {
   padding-bottom: 10rem;
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.py-7 {
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pb-10 {
@@ -1323,6 +1273,10 @@ video {
   padding-right: 2.5rem;
 }
 
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
 .pr-4 {
   padding-right: 1rem;
 }
@@ -1337,10 +1291,6 @@ video {
 
 .pt-5 {
   padding-top: 1.25rem;
-}
-
-.pr-2 {
-  padding-right: 0.5rem;
 }
 
 .text-left {
@@ -1796,6 +1746,10 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:w-2\/4 {
+    width: 50%;
+  }
+
   .xl\:justify-center {
     justify-content: center;
   }
