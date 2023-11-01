@@ -42,7 +42,7 @@
                         class="flex uppercase flex-col xl:text-base md:text-xs font-bold p-0 mt-5 border  bg-blue-950 text-white rounded-lg md:flex-row md:space-x-0.5 lg:md:space-x-1 md:mt-0 md:border-0 ">
                         <li>
                             <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                                class="flex items-center uppercase justify-between w-full py-3 pl-1 p-5  pr-4rounded md:hover:bg-transparent md:border-0  md:w-auto hover:text-orange-500">Компания
+                                class="flex items-center uppercase justify-between w-full py-3 pl-1 p-5  pr-4rounded md:hover:bg-transparent md:border-0  md:w-auto hover:text-orange-500 lng-company">Компания
                                 <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -53,14 +53,16 @@
                                 class="z-10 hidden font-normal bg-orange-500 divide-yrounded-lg shadow w-auto">
                                 <ul class="py-6  " aria-labelledby="dropdownLargeButton">
                                     <li>
-                                        <a href="/history.html" class="block px-6 py-2">История</a>
+                                        <a href="/history.html" class="block px-6 py-2 lng-history">История</a>
                                     </li>
                                     <li>
-                                        <a href="/org-strucutre.html" class="block px-6 py-2 ">Организационная
+                                        <a href="/org-strucutre.html"
+                                            class="block px-6 py-2 lng-organizational-structure ">Организационная
                                             структура</a>
                                     </li>
                                     <li>
-                                        <a href="/leadership.html" class="block px-6 py-2 ">Руководство</a>
+                                        <a href="/leadership.html"
+                                            class="block px-6 py-2 lng-leadership">Руководство</a>
                                     </li>
                                     <!-- <li>
                                     <a href="#" class="block px-6 py-2 ">Виды деятельности</a>
@@ -69,7 +71,8 @@
                                     <a href="#" class="block px-6 py-2 ">Планы и отчеты</a>
                                 </li> -->
                                     <li>
-                                        <a href="/regulations.html" class="block px-6 py-2 ">Нормативные документы</a>
+                                        <a href="/regulations.html"
+                                            class="block px-6 py-2 lng-regulatory-documents">Нормативные документы</a>
                                     </li>
                                     <!-- <li>
                                     <a href="#" class="block px-6 py-2 ">Вопросы</a>
@@ -84,18 +87,24 @@
                         <!-- <li class="block py-3 pl-1 lg:pl-6 pr-1 lg:pr-4  text-white  hover:text-orange-500"><a href="#"
                             class="nav_link mr-1">Вакансия</a></li> -->
                         <li class="block py-3  text-white  hover:text-orange-500"><a href="https://goszakup.gov.kz/"
-                                class="nav_link mr-1 p-5">Закупки</a></li>
+                                class="nav_link mr-1 p-5 lng-purchases">Закупки</a></li>
                         <!-- <li class="block py-3 pl-1 lg:pl-6 pr-1 lg:pr-4 text-white  hover:text-orange-500"><a
                             href="/news.html" class="nav_link mr-1">Новости</a></li> -->
-                        <li class="block py-3   text-white  hover:text-orange-500"><a href="/contacts.html"
-                                class="nav_link mr-1 p-5">Контакты</a></li>
+                        <li class="block py-3   text-white  hover:text-orange-500 lng-contacts"><a href="/contacts.html"
+                                class="nav_link mr-1 p-5 ">Контакты</a></li>
 
                         <!-- Language -->
-
+                        <div class="container-free ">
+                            <select class="change-lang  bg-blue-950 ">
+                                <option value="ua">KZ</option>
+                                <option value="ru" selected>RU</option>
+                                <option value="en">EN</option>
+                            </select>
+                        </div>
 
 
                         <button id="dropdownDefaultButtoLanguage" data-dropdown-toggle="dropdow"
-                            class="flex items-center  justify-between  lg:pl-6 w-full py-3 pb-4 pl-1 pr-4 p-5 pr-4rounded md:hover:bg-transparent md:border-0  md:w-auto hover:text-orange-500 uppercase  "
+                            class="flex items-center  justify-between  lg:pl-6 w-full py-3 pb-4 pl-1 pr-4 p-5 pr-4rounded md:hover:bg-transparent md:border-0  md:w-auto hover:text-orange-500 uppercase lng-search"
                             type="button">ru<svg class="w-2.5 h-2.5 ml-2.5 " aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -157,7 +166,8 @@
         </div>
     </div>
 
-
+    <script src="lang.js"></script>
+    <script src="app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 </body>
 

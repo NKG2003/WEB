@@ -1,32 +1,42 @@
 const langArr = {
-    "unit" :  {
-        "ru": "создаем многоязычный сайт",
-        "en": "build a multi language site ",
-        "ua": "створюємо багатомовний сайт",
+    "company" :  {
+        "ru": "Компания",
+        "en": "Company",
+        "kz": "Компания",
     }, 
-    "chip": {
-        "ru": "графический чип",
-        "en": "graphics processing unit",
-        "ua": "графічний чіп",
-    }, 
-    "memory": {
+    "history": {
         "ru": "объем памяти",
-        "en": "memory size",
-        "ua": "oбсяг пам'яті",
+        "en": "History",
+        "kz": "Тарих",
     }, 
-    "memory-type": {
-        "ru": "тип памяти",
-        "en": "memory type",
-        "ua": "nип пам'яті",
+    "organizational-structure": {
+        "ru": "Организационная структура",
+        "en": "Organizational structure",
+        "kz": "Ұйымдық құрылым",
     }, 
-    "cool": {
-        "ru": "тип системы охлаждения",
-        "en": "сooling system type",
-        "ua": "тип системи охолодження",
+    "leadership": {
+        "ru": "Руководство",
+        "en": "leadership",
+        "kz": "Руководство",
     }, 
-    "more": {
-        "ru": "детально о товаре",
-        "en": "more details",
-        "ua": "детально про товар",
+    "regulatory-documents": {
+        "ru": "Нормативные документы",
+        "en": "Regulatory documents",
+        "kz": "Нормативтік құжаттар",
+    }, 
+    "purchases": {
+        "ru": "Закупки",
+        "en": "Purchases",
+        "kz": "Purchases",
+    }, 
+    "contacts": {
+        "ru": "Контакты",
+        "en": "Contacts",
+        "kz": "Байланыс",
+    }, 
+    "search": {
+        "ru": "Поиск",
+        "en": "Regulatory documents",
+        "kz": "Іздеу",
     }, 
 }
