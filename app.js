@@ -1,36 +1,138 @@
-const maxImg = document.querySelector('.right-panel img');
-const select = document.querySelector('select');
-const allLang = ['en', 'ru', 'kz'];
+const langButtons = document.querySelectorAll("[data-btn]");
+const allLangs = ["ru", "en", "kz"];
+const currentPathName = window.location.pathname;
+let currentLang =
+    localStorage.getItem("language") || checkBrowserLang() || "en";
+let currentTexts = {};
 
-document.querySelectorAll('.left-panel img').forEach(item => item.onmouseenter = (event) => maxImg.src = event.target.src);
+const homeTexts = {
+    "company": {
+        "ru": "Компания",
+        "en": "Company",
+        "kz": "Компания",
+    },
+    "history": {
+        "ru": "объем памяти",
+        "en": "History",
+        "kz": "Тарих",
+    },
+    "organizational-structure": {
+        "ru": "Организационная структура",
+        "en": "Organizational structure",
+        "kz": "Ұйымдық құрылым",
+    },
+    "leadership": {
+        "ru": "Руководство",
+        "en": "leadership",
+        "kz": "Руководство",
+    },
+    "regulatory-documents": {
+        "ru": "Нормативные документы",
+        "en": "Regulatory documents",
+        "kz": "Нормативтік құжаттар",
+    },
+    "purchases": {
+        "ru": "Закупки",
+        "en": "Purchases",
+        "kz": "Purchases",
+    },
+    "contacts": {
+        "ru": "Контакты",
+        "en": "Contacts",
+        "kz": "Байланыс",
+    },
+    "search": {
+        "ru": "Поиск",
+        "en": "Regulatory documents",
+        "kz": "Іздеу",
+    },
+};
 
-select.addEventListener('change', changeURLLanguage);
+// Проверка пути страницы сайта
+function checkPagePathName() {
+    switch (currentPathName) {
+        case "/index.html":
+            currentTexts = homeTexts;
+            break;
+        case "/another_page.html":
+            currentTexts = anotherTexts;
+            break;
 
-// перенаправить на url с указанием языка
-function changeURLLanguage() {
-    let lang = select.value;
-    location.href = window.location.pathname + '#' + lang;
-    location.reload();
-}
-
-function changeLanguage() {
-    let hash = window.location.hash;
-    hash = hash.substr(1);
-    console.log(hash);
-    if (!allLang.includes(hash)) {
-        location.href = window.location.pathname + '#en';
-        location.reload();
+        default:
+            currentTexts = homeTexts;
+            break;
     }
-    select.value = hash;
-    document.querySelector('title').innerHTML = langArr['unit'][hash];
-    // document.querySelector('.lng-chip').innerHTML = langArr['chip'][hash];
-    for (let key in langArr) {
-        let elem = document.querySelector('.lng-' + key);
+}
+checkPagePathName();
+
+// Изменение языка у текстов
+function changeLang() {
+    for (const key in currentTexts) {
+        let elem = document.querySelector(`[data-lang=${key}]`);
         if (elem) {
-            elem.innerHTML = langArr[key][hash];
+            elem.textContent = currentTexts[key][currentLang];
         }
+    }
+}
+changeLang();
 
+// Вешаем обработчики на каждую кнопку
+langButtons.forEach((btn) => {
+    btn.addEventListener("click", (event) => {
+        if (!event.target.classList.contains("header__btn_active")) {
+            currentLang = event.target.dataset.btn;
+            localStorage.setItem("language", event.target.dataset.btn);
+            resetActiveClass(langButtons, "header__btn_active");
+            btn.classList.add("header__btn_active");
+            changeLang();
+        }
+    });
+});
+
+// Сброс активного класса у переданного массива элементов
+function resetActiveClass(arr, activeClass) {
+    arr.forEach((elem) => {
+        elem.classList.remove(activeClass);
+    });
+}
+
+// Проверка активной кнопки
+function checkActiveLangButton() {
+    switch (currentLang) {
+        case "ru":
+            document
+                .querySelector('[data-btn="ru"]')
+                .classList.add("header__btn_active");
+            break;
+        case "en":
+            document
+                .querySelector('[data-btn="en"]')
+                .classList.add("header__btn_active");
+            break;
+        case "de":
+            document
+                .querySelector('[data-btn="de"]')
+                .classList.add("header__btn_active");
+            break;
+
+        default:
+            document
+                .querySelector('[data-btn="ru"]')
+                .classList.add("header__btn_active");
+            break;
+    }
+}
+checkActiveLangButton();
+
+// Проверка языка браузера
+function checkBrowserLang() {
+    const navLang = navigator.language.slice(0, 2).toLowerCase();
+    const result = allLangs.some((elem) => {
+        return elem === navLang;
+    });
+    if (result) {
+        return navLang;
     }
 }
 
-changeLanguage();
+console.log("navigator.language", checkBrowserLang());
