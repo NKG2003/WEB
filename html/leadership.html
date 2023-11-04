@@ -16,15 +16,14 @@
 
 <body class="font-roboto bg-[url('/img/office.jpeg')] md:h-screen md:w-screen bg-cover bg-no-repeat bg-center bg-local">
 
-    <nav class=" bg-blue-950  fixed z-30 py-1 w-full h-14 flex flex-wrap items-center mx-auto p-0 ">
-        <a href="/index.html" class="flex  justify-start w-auto h-12 p-2 -ml-6 lg:-ml-3">
-            <img src="./img/logo(2).png" class="h-10 ml-9 " alt="Flowbite Logo" />
-        </a>
+    <nav class=" bg-blue-950  fixed z-30 py-1 w-full h-14 flex flex-wrap items-center mx-auto p-0">
+        <a href="/html/index.html" class="flex  justify-start w-auto h-12 p-2 -ml-6 lg:-ml-3">
+            <img src="/img/logo(2).png" class="h-10 ml-9 " alt="Flowbite Logo" /></a>
         <button data-collapse-toggle="navbar-dropdown" type="button"
-            class="inline-flex  bg-blue-950 items-end p-2 w-10 h-10 justify-end ml-auto text-xs md:text-xs  text-white rounded-lg md:hidden "
+            class="inline-flex  bg-blue-950 items-end p-2 w-10 h-10 justify-end ml-auto text-xs md:text-xs text-white rounded-lg md:hidden "
             aria-controls="navbar-dropdown" aria-expanded="false">
-            <span class="sr-only "></span>
-            <svg class="w-5 h-5   " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+            <span class="sr-only"></span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 17 14">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M1 1h15M1 7h15M1 13h15" />
@@ -33,82 +32,101 @@
         <div class="hidden w-full pr-2 pl-2 md:block md:w-auto text-white  " id="navbar-dropdown">
             <ul
                 class="flex uppercase   flex-col xl:text-base md:text-xs font-bold p-0 mt-5 border  bg-blue-950 text-white rounded-lg md:flex-row md:space-x-0.5 lg:md:space-x-1 md:mt-0 md:border-0  ">
-                <button class="block uppercase text-start py-3  text-white  hover:text-orange-500"><a href="/index.html"
-                        class="ml-3 lg:p-3 pr-96 sm:pr-0 xl:p-7 ">Главная</a></button>
+                <button class="block uppercase text-start py-3  text-white  hover:text-orange-500">
+                    <a href="/html/index.html" class="ml-3 xl:p-3 p-0 pr-96 sm:pr-0 2xl:p-5 py-4 lng-main"
+                        data-lang="main">Главная</a></button>
                 <li>
-                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                        class="flex items-center uppercase justify-between w-full py-3 p-3 sm:-ml-3  rounded md:hover:bg-transparent md:border-0  md:w-auto hover:text-orange-500 ">О
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" data-lang="company"
+                        class="flex items-center uppercase justify-between w-full py-3 p-3 lng-company  rounded md:hover:bg-transparent md:border-0  md:w-auto hover:text-orange-500 ">О
                         компания
-                        <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 10 6">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="m1 1 4 4 4-4" />
+                        <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 1 4 4 4-4" />
                         </svg></button>
+
                     <!-- Dropdown menu -->
-                    <div id="dropdownNavbar" class="z-10 hidden justify-center font-normal  divide-yrounded-lg shadow ">
+
+                    <div id="dropdownNavbar"
+                        class="z-10 hidden justify-center font-normal  divide-yrounded-lg shadow ">
                         <ul class="py-6 bg-orange-500 fixed flex top-0 -left-16 flex-col "
                             aria-labelledby="dropdownLargeButton">
-                            <li>
-                                <a href="/history.html" class="block px-6 py-2 ">История</a>
+                            <li><a href="/html/history.html" class="block px-6 py-2 lng-history"
+                                    data-lang="history">История</a>
                             </li>
-                            <li>
-                                <a href="/org-strucutre.html" class="block px-6 py-2  ">Организационная
-                                    структура</a>
+                            <li><a href="/html/org-strucutre.html"
+                                    class="block px-6 py-2 lng-organizational-structure"
+                                    data-lang="organizational-structure">Организационная структура</a>
                             </li>
-                            <li>
-                                <a href="/leadership.html" class="block px-6 py-2 ">Руководство</a>
+                            <li><a href="/html/leadership.html" class="block px-6 py-2 lng-leadership"
+                                    data-lang="leadership">Руководство</a>
                             </li>
-                            <li>
-                                <a href="/regulations.html" class="block px-6 py-2 ">Виды деятельности</a>
+                            <li><a href="/html/types-of-activities.html" class="block px-6 py-2 lng-types-of-activities"
+                                    data-lang="types-of-activities">Виды деятельности</a>
                             </li>
-                            <li>
-                                <a href="/regulations.html" class="block px-6 py-2 ">Планы развития</a>
+                            <li><a href="/html/development-plans.html" class="block px-6 py-2 lng-development-plans"
+                                    data-lang="development-plans">Планы развития</a>
                             </li>
-                            <li>
-                                <a href="/regulations.html" class="block px-6 py-2 ">Отчетность</a>
+                            <li><a href="/html/reporting.html" class="block px-6 py-2 lng-reporting"
+                                    data-lang="reporting">Отчетность</a>
                             </li>
-                            <li>
-                                <a href="/regulations.html" class="block px-6 py-2 ">Нормативные документы</a>
+                            <li><a href="/html/regulations.html"
+                                    class="block px-6 py-2 lng-regulatory-documents"
+                                    data-lang="regulatory-documents">Нормативные документы</a>
                             </li>
-                            <li>
-                                <a href="/regulations.html" class="block px-6 py-2 ">ОбЪявления</a>
+                            <li><a href="/html/ads.html" class="block px-6 py-2 lng-ads" data-lang="ads">Объявления</a>
                             </li>
-
                     </div>
                 </li>
+
                 <!-- блоки -->
 
-                <button class="block uppercase text-start py-3  text-white  hover:text-orange-500"><a href="#"
-                        class="ml-3 lg:p-3 pr-96 sm:pr-0 xl:p-7 ">Проекты</a></button>
-                <button class="block uppercase text-start py-3  text-white  hover:text-orange-500"><a href="#"
-                        class="ml-3 lg:p-3 pr-96  sm:pr-0 xl:p-7  ">Новости</a></button>
-                <button class="block uppercase text-start py-3  text-white  hover:text-orange-500"><a
-                        href="https://goszakup.gov.kz/" class="ml-3 lg:p-3 pr-96  sm:pr-0 xl:p-7  ">Закупки</a></button>
-                <button class="block uppercase text-start py-3  text-white  hover:text-orange-500"><a href="#"
-                        class="ml-3 lg:p-3 pr-96 sm:pr-0 xl:p-7  ">Вакансия</a></button>
-                <button class="block uppercase text-start py-3  text-white  hover:text-orange-500 "><a
-                        href="/contacts.html" class="ml-3 lg:p-3 pr-96 sm:pr-0 xl:p-7  ">Контакты</a></button>
+                <button class="block uppercase text-start py-3  text-white  hover:text-orange-500">
+                    <a href="/html/projects.html" class="ml-3 xl:p-3 p-0 pr-96 sm:pr-0 2xl:p-5 py-4 lng-projects"
+                        data-lang="projects">Проекты</a></button>
+                <button class="block uppercase text-start py-3  text-white  hover:text-orange-500">
+                    <a href="/html/news.html" class="ml-3 xl:p-3 p-0 pr-96  sm:pr-02 2xl:p-5 py-4  lng-news"
+                        data-lang="news">Новости</a></button>
+                <button class="block uppercase text-start py-3  text-white  hover:text-orange-500">
+                    <a href="https://goszakup.gov.kz/"
+                        class="ml-3 xl:p-3 p-0 pr-96  sm:pr-02 2xl:p-5 py-4  lng-purchases"
+                        data-lang="purchases">Закупки</a></button>
+                <button class="block uppercase text-start py-3  text-white  hover:text-orange-500">
+                    <a href="/html/vacancy.html" class="ml-3 xl:p-3 p-0 pr-96 sm:pr-0 2xl:p-5 py-4  lng-vacancy"
+                        data-lang="vacancy">Вакансия</a></button>
+                <button class="block uppercase text-start py-3  text-white  hover:text-orange-500 ">
+                    <a href="/html/contacts.html"
+                        class="ml-3 xl:p-3 p-0 pr-96 sm:pr-0 2xl:p-5 py-4 lng-contacts "
+                        data-lang="contacts">Контакты</a></button>
 
                 <!-- Language -->
 
                 <div class="md:flex md:absolute md:right-0">
 
                     <button id="dropdownDefaultButtoLanguage" data-dropdown-toggle="dropdow"
-                        class="flex items-center  justify-between  lg:pl-6 w-full py-3 pb-4 pl-1  p-3 rounded md:hover:bg-transparent md:border-0  md:w-auto hover:text-orange-500 uppercase "
-                        type="button">ru<svg class="w-2.5 h-2.5 ml-2.5 " aria-hidden="true"
+                        data-lang="language"
+                        class="flex items-center lng-search justify-between  lg:pl-6 w-full py-3 pb-4 pl-1  p-3 rounded md:hover:bg-transparent md:border-0  md:w-auto hover:text-orange-500 uppercase "
+                        type="button">Язык<svg class="w-2.5 h-2.5 ml-2.5 " aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="m1 1 4 4 4-4" />
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 1 4 4 4-4" />
                         </svg></button>
 
                     <div id="dropdow"
-                        class="z-10 hidden divide-y  shadow w-14 text-center  md:bg-orange-500/95 bg-orange-500 font-medium">
-                        <ul class="py-0.5 uppercase   text-white" aria-labelledby="dropdownDefaultButtoLanguage">
+                        class="z-10 hidden divide-y absolute shadow w-14 text-center  md:bg-orange-500/95 bg-orange-500 font-medium">
+                        <ul class="py-0.5 uppercase   text-white"
+                            aria-labelledby="dropdownDefaultButtoLanguage">
                             <button>
-                                <a href="#" class="block px-4 py-2 mt-3 ">kz</a>
+                                <a href="#" class="block px-4 py-2 mt-3 header__btn" data-btn="ru"
+                                    data-lang="russian">rus</a>
                             </button>
                             <button>
-                                <a href="#" class="block px-4 py-2 mt-3 ">en</a>
+                                <a href="#" class="block px-4 py-2 mt-3 header__btn" data-btn="kz"
+                                    data-lang="kazakh">kaz</a>
+                            </button>
+                            <button>
+                                <a href="#" class="block px-4 py-2 mt-3 header__btn" data-btn="en"
+                                    data-lang="english">eng</a>
                             </button>
                         </ul>
                     </div>
@@ -134,7 +152,6 @@
             </ul>
         </div>
     </nav>
-
 
 
 
